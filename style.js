@@ -23,34 +23,34 @@ In this case, they will be able to observe that they have ordered three vanilla,
   const customerOrderObject = {};
   console.log(customerOrderObject);
 
-  //make this a function called froyoOrderTaker
+  //make this a function called froyoOrderMaker
   const froyoOrderMaker = (froyoFlavors) => {
     //loop through array and add to an object called customerOrderObject
       //loop through array and add to an object called customerOrderObject
-      //logic to add in if key is not in there. if key is in add 1 to value
-        //no vanilla in object ---> add froyoObject[vanilla] = 1
-        //yes vanilla in keys ----> froyoObject[vanilla] +=1 
+        //make a variable to hold the currentFlavor while looping, because it's easier to read the code.
+          //logic to add in if key is not in there. if key is in add 1 to value
+            //yes vanilla in keys ----> froyoObject[vanilla] +=1   
+            //no vanilla key in object ---> create froyoObject[vanilla] = 1
+            
     for (let i = 0; i < froyoFlavors.length; i++) {
-      if (froyoFlavors[i] in customerOrderObject) {
-        customerOrderObject[i]++;
+      const currentFlavor = froyoFlavors[i];
+      if (currentFlavor in customerOrderObject) {
+        customerOrderObject[currentFlavor]++;
       } else {
-        customerOrderObject[i] = 1;
+        customerOrderObject[currentFlavor] = 1;
       }
     }
+    return customerOrderObject;
   }
 
 //console out the froyoOrderTaker   
-console.log(customerOrderObject);
+console.log(froyoOrderMaker(customerOrderArray));
 
    
-
-
 ////or//////////
 
 //start with the order Array
   //Google how to find unique names in an Array
   //filter method on each unique name
   //take these and put in object
-  
-
 //console out 
