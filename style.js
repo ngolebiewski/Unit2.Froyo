@@ -6,7 +6,7 @@ In this case, they will be able to observe that they have ordered three vanilla,
 */
 
 //prompt user
-  //Welcome to Frodo's Froyo Festival🍦
+  //🍦Welcome to Frodo's Froyo Festival🍦
   // "Enter a list of comma-separated froyo flavors"
     //test with: vanilla,vanilla,vanilla,strawberry,coffee,coffee
   //accept user input as a string called customerOrderString
@@ -21,17 +21,15 @@ In this case, they will be able to observe that they have ordered three vanilla,
   
   //initialize customerOrderObject as an empty object
   const customerOrderObject = {};
-  console.log(customerOrderObject);
 
   //make this a function called froyoOrderMaker
-  const froyoOrderMaker = (froyoFlavors) => {
     //loop through array and add to an object called customerOrderObject
       //loop through array and add to an object called customerOrderObject
         //make a variable to hold the currentFlavor while looping, because it's easier to read the code.
           //logic to add in if key is not in there. if key is in add 1 to value
             //yes vanilla in keys ----> froyoObject[vanilla] +=1   
             //no vanilla key in object ---> create froyoObject[vanilla] = 1
-            
+  const froyoOrderMaker = (froyoFlavors) => {       
     for (let i = 0; i < froyoFlavors.length; i++) {
       const currentFlavor = froyoFlavors[i];
       if (currentFlavor in customerOrderObject) {
@@ -43,7 +41,7 @@ In this case, they will be able to observe that they have ordered three vanilla,
     return customerOrderObject;
   }
 
-//console out the froyoOrderTaker   
+//console out the froyoOrderMaker   
 console.log(froyoOrderMaker(customerOrderArray));
 
    
@@ -53,4 +51,5 @@ console.log(froyoOrderMaker(customerOrderArray));
   //Google how to find unique names in an Array
   //filter method on each unique name
   //take these and put in object
-//console out 
+//console out object
+//I like the first version better
