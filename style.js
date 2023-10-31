@@ -10,5 +10,28 @@ In this case, they will be able to observe that they have ordered three vanilla,
 //prompt user
   //Welcome to Frodo's Froyo Festival
   // "Enter a list of comma-separated froyo flavors"
+    //test with: vanilla,vanilla,vanilla,strawberry,coffee,coffee
+  //accept user input as a string called customerOrderString
+
+  //alert --- "thanks for your order, open the console and look at the results"
+  //create an array called customerOrderArray via split ", " method,
+
+  //make this a function called froyoOrderTaker
+  //initialize customerOrderObject as an empty object
+  //loop through array and add to an object called customerOrderObject
+  //logic to add in if key is not in there. if key is in add 1 to value
+        //no vanilla in object ---> add froyoObject[vanilla] = 1
+        //yes vanilla in keys ----> froyoObject[vanilla] +=1 
+
+  //console out the froyoOrderTaker      
+
+
+////or//////////
+
+//start with the order Array
+  //Google how to find unique names in an Array
+  //filter method on each unique name
+  //take these and put in object
+  
 
 //console out 
